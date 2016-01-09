@@ -1,0 +1,100 @@
+body{
+	font-family: 'Raleway', sans-serif;
+	color: #333333;
+	font-size: 18px;
+}
+header{
+	background: #004063;
+	padding: 10px 2%;
+	border-box:box-sizing;	
+}
+header nav li a{
+	font-size: 0.8em;
+	color:#fff;
+} 
+header h4{
+	text-align: left;
+	color: #29a5bc;
+}
+h1, h2, h3, h4, h5, h6{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;	
+}
+h1, b, .map h2{
+	color: #07609a;
+}
+h1{
+	padding:2% 5%;
+	border-box:box-sizing;
+	font-weight: 300;
+	font-size: 2.5em;
+}
+h3{
+	padding:2% 5%;
+	border-box:box-sizing; 
+	color: #777777;
+}
+p{
+	text-align: justify;
+}
+.gris{
+	background: #f4f4f4;
+	padding:5% 0;
+	border-box:box-sizing;
+}
+.padding{
+	padding:0 5%;
+	border-box:box-sizing;
+}
+.blue p,.blue h1,.blue h2,.blue h3,.blue h4,.blue h5,.blue h6{
+	color: #fff;
+}
+.blue{
+	background: url(../img/bg-blue.jpg) no-repeat fixed top center;
+}
+.thumbnail{
+	background: none !important;
+	border: none !important;
+}
+.caption p{
+	font-size: 0.8em;
+	text-align: left;
+}
+.blue-marine{
+	background: #004063;
+}
+.blue-marine p{
+	text-align: center;
+	color: #fff;
+}
+footer div{
+	padding:2% 10%;
+	border-box:box-sizing;
+	font-size: 0.8em;
+}
+#planestudios, #profesores, #proyectos, #contacto{
+	padding-top: 5%;
+}
+.map{
+	padding:5% 0;
+	border-box:box-sizing;	
+}
+.oxford{
+	background: #333;
+}
+@media (min-width: 767px) {
+
+header{
+	position: fixed;
+	z-index: 9;
+}
+h1{
+	font-size: 3em;
+}
+
+
+
+
+
+
+}
