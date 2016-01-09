@@ -20,14 +20,14 @@ h1, h2, h3, h4, h5, h6{
 	text-align: center;
 	font-family: 'Raleway', sans-serif;	
 }
-h1, b{
+h1, b, .map h2{
 	color: #07609a;
 }
 h1{
 	padding:2% 5%;
 	border-box:box-sizing;
 	font-weight: 300;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 h3{
 	padding:2% 5%;
@@ -72,14 +72,25 @@ footer div{
 	border-box:box-sizing;
 	font-size: 0.8em;
 }
+#planestudios, #profesores, #proyectos, #contacto{
+	padding-top: 5%;
+}
+.map{
+	padding:5% 0;
+	border-box:box-sizing;	
+}
+.oxford{
+	background: #333;
+}
 @media (min-width: 767px) {
 
 header{
-
 	position: fixed;
 	z-index: 9;
 }
-
+h1{
+	font-size: 3em;
+}
 
 
 

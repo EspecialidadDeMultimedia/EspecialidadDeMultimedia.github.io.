@@ -24,7 +24,7 @@
       <header class="row">
         <div class="col-md-6">
           <div class="row">
-            <div class="col-md-6"><figure><img src="img/edinba-logo.png" alt="Escuela de Diseño del INBA"></figure></div>
+            <div class="col-md-6"><figure><a href="#top"><img src="img/edinba-logo.png" alt="Escuela de Diseño del INBA"></a></figure></div>
             <div class="col-md-6"><h4>Especialidad en Diseño Multimedia</h4></div>
           </div>
         </div>
@@ -39,7 +39,7 @@
           </nav>
         </div>
       </header>
-      <section class="row">
+      <section class="row" id="top">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -87,7 +87,7 @@
           </a>
         </div>
       </section>
-      <section class="row gris" id="">
+      <section class="row gris" id="planestudios">
         <div class="col-sm-12">
           <h1>Especialidad en Diseño Multimedia</h1>
           <h3>Brindamos a nuestros alumnos sólidos soportes teóricos y prácticos en lo referenteal análisis, modelación y distribución de mensajes a partir de las estrategias metodológicas del diseño.</h3>
@@ -170,7 +170,7 @@
           </div>
         </div>
       </section>
-      <section class="row blue">
+      <section class="row blue" id="proyectos">
         <div class="col-sm-12">
           <h1>Proyectos Destacados</h1>
           <h3>A lo largo de la especialidad el alumno realizará diversos proyectos en los que se verá con la necesidad de explotar su creatividad.</h3>
@@ -205,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section class="row">
+      <section class="row" id="contacto">
         <div class="col-sm-12">
           <h1>Contacto</h1>
           <h3>Si tienes alguna duda o necesitas más información sobre nuestra Especialidad en Diseño Multimedia, escríbenos y nosotros nos pondremo en contacto para aclarar cualquier duda.</h3>
@@ -229,7 +229,7 @@
           </div>
         </form>
       </section>
-      <section class="row">
+      <section class="row map">
         <h2>Xocongo 138, Col. Tránsito Del. Cuauhtémoc, C.P. 06820, México, D.F.</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.840641774802!2d-99.1336645491583!3d19.419290186827606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fec31055279b%3A0x1baed91e829a2c2e!2sInstituto+Nacional+de+Bellas+Artes+Escuela+de+Dise%C3%B1o!5e0!3m2!1ses!2smx!4v1451708610121" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>  
@@ -263,5 +263,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+           $('a[href*=#]').click(function() {
+           if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+               && location.hostname == this.hostname) {
+                   var $target = $(this.hash);
+                   $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+                   if ($target.length) {
+                       var targetOffset = $target.offset().top;
+                       $('html,body').animate({scrollTop: targetOffset}, 1000);
+                       return false;
+                  }
+             }
+         });
+      });
+  </script>
   </body>
 </html>
